@@ -199,7 +199,31 @@
 //     return 0;
 // }
 
-// Minimum value in the array
+// 2WAY OF MAXVALUE IN ARRAY
+
+// #include <iostream>
+// #include <limits.h>
+// using namespace std;
+
+// int main()
+// {
+
+//     int arr[8] = {10, 3, 5, 8, 2, 85, 3, 96};
+
+//     int maxValue = INT_MIN;
+
+//     for (int i = 0; i < 8; i++)
+//     {
+//         if (arr[i] > maxValue)
+//         {
+//             maxValue = arr[i];
+//         }
+//     }
+
+//     cout << "Max Value : " << maxValue << endl;
+// }
+
+// Minimum value in the array 1 way
 // #include <iostream>
 // using namespace std;
 
@@ -215,6 +239,34 @@
 
 //     cout << "Minimum value in the array is: " << minValue << endl;
 //     return 0;
+// }
+
+// 2 WAY OF MINVALUE OF ARRAY
+
+// #include<iostream>
+// #include<limits.h>
+
+// or
+
+// // #include <bits/stdc++.h>
+// // using namespace std;
+
+// // int main()
+// // {
+
+// //     int arr[8] = {10, 3, 5, 8, 2, 85, 3, 96};
+
+// //     int minValue = INT_MAX;
+
+// //     for (int i = 0; i < 8; i++)
+// //     {
+// //         if (arr[i] < minValue)
+// //         {
+// //             minValue = arr[i];
+// //         }
+// //     }
+
+// //     cout << "Min Value : " << minValue << endl;
 // }
 
 // SUM OF ARRAY
@@ -256,11 +308,11 @@
 
 // }
 
- //CURD( CREATE,UPDATE,READ,DELETE)
+// CURD( CREATE,UPDATE,READ,DELETE)
 
-//CREATE
-// #include<iostream>
-// using namespace std;
+// CREATE
+//  #include<iostream>
+//  using namespace std;
 
 // int main(){
 //   int n = 10;
@@ -270,8 +322,8 @@
 //   for(int i = 0; i < n; i++){
 //     cout<<arr[i]<<endl;
 //     // cout<<"Element present at "<<i<<" index : "<<arr[i]<<endl;
-//   }
-// }
+//    }
+//  }
 
 //   UPDATE  OF ARRAY
 
@@ -311,7 +363,7 @@
 
 // }
 
-//READ
+// READ
 
 // #include<iostream>
 // using namespace std;
@@ -336,9 +388,7 @@
 // }
 // }
 
-
-// Delete 
-//Array element from speific index
+// Delete Array element from speific index
 
 // #include<iostream>
 // using namespace std;
@@ -361,7 +411,7 @@
 
 // }
 
-//2 WAY OF DELETE ARRAY(DAINAMIC)
+// 2 WAY OF DELETE ARRAY(DAINAMIC)
 
 // // #include <iostream>
 //     using namespace std;
@@ -395,4 +445,115 @@
 //     {
 //         cout << arr[i] << " ";
 //     }
+// }
+
+// inserting an element into an array
+//  #include <iostream>
+
+// int main() {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     // int size = sizeof(arr) / sizeof(arr[0]);
+//     int newElement = 99;
+//     int position = 2; // Insert at index 2
+
+//     int newArray[5 + 1];
+
+//     // Copy elements before the position
+//     for (int i = 0; i < position; ++i) {
+//         newArray[i] = arr[i];
+//     }
+
+//     // Insert the new element
+//     newArray[position] = newElement;
+
+//     // Copy the remaining elements
+//     for (int i = position; i < 5; ++i) {
+//         newArray[i + 1] = arr[i];
+//     }
+
+//     // Print the new array
+//     for (int i = 0; i < 5 + 1; ++i) {
+//         std::cout << newArray[i] << " ";
+//     }
+
+//     return 0;
+// }
+
+// SWAP US FOR CHANGE THE PLACE OF ELEMENT
+// Swap()
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 10;
+//     int b = 20;
+
+//     swap(b,a);   //(A=20,B=10) OUTPUT
+
+//     cout<<"A : "<<a<<endl;
+//          cout<<"B : "<<b<<endl;
+
+// }
+
+// REVESRE ARRY
+
+// 1] WAY (WHILE LOOP METHOD)
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int arr[10] = {12,34,5,67,8,9,1223,56,78,2};
+
+//  cout<<"Before swap/reverse : ";
+
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+
+// cout<<endl;
+
+//     int i = 0;
+//     int j = 9;
+
+//     while(i<j){
+
+//         swap(arr[i],arr[j]);
+//         i++;
+//         j--;
+//     }
+
+// cout<<"After swap/reverse : ";
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+// }
+
+// 2]WAY (FOR LOOP)
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//     int arr[10] = {12,34,67,56,89,44,22,12,98,100};
+
+//     int j = 9;
+
+//     for(int i = 0; i < 10; i++){
+
+//         if(i>=j){
+//             break;
+//         }
+
+//         swap(arr[i],arr[j]);
+//         j--;
+//     }
+
+//     cout<<"After swap/reverse : ";
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+
 // }
