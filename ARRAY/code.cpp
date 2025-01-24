@@ -459,7 +459,7 @@
 //     int newArray[5 + 1];
 
 //     // Copy elements before the position
-//     for (int i = 0; i < position; ++i) {
+//     for (int i = 0; i < position; i++) {
 //         newArray[i] = arr[i];
 //     }
 
@@ -474,6 +474,44 @@
 //     // Print the new array
 //     for (int i = 0; i < 5 + 1; ++i) {
 //         std::cout << newArray[i] << " ";
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     // Original array with 5 elements
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int newElement = 99; // Element to insert
+//     int position = 2;    // Index where we want to insert
+
+//     // New array to hold 6 elements (5 original + 1 new)
+//     int newArray[6];
+
+//     // Copy elements before the position
+//     for (int i = 0; i < position; i++)
+//     {
+//         newArray[i] = arr[i];
+//     }
+
+//     // Insert the new element at the specified position
+//     newArray[position] = newElement;
+
+//     // Copy the rest of the elements from the original array
+//     for (int i = position; i < 5; i++)
+//     {
+//         newArray[i + 1] = arr[i];
+//     }
+
+//     // Print the new array
+//     cout << "Array after insertion: ";
+//     for (int i = 0; i < 6; i++)
+//     {
+//         cout << newArray[i] << " ";
 //     }
 
 //     return 0;
@@ -553,6 +591,7 @@
 
 //     cout<<"After swap/reverse : ";
 //     for(int i = 0; i < 10; i++){
+
 //         cout<<arr[i] <<" ";
 //     }
 
