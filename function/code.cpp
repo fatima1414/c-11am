@@ -32,9 +32,6 @@
 // return 0;
 // }
 
-
-
-
 // Type 1 : take nothing and return nothing
 
 // #include<iostream>
@@ -54,8 +51,6 @@
 // return 0;
 // }
 
-
-
 // #include<iostream>
 // using namespace std;
 // // parameter in function
@@ -72,8 +67,6 @@
 // cout<<"Result : "<<result<<endl;
 // return 0;
 // }
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -95,9 +88,6 @@
 // return 0;
 // }
 
-
-
-
 // #include<iostream>
 // using namespace std;
 // void addition(double num1, double num2){
@@ -106,7 +96,6 @@
 // int main(){
 //     addition(12.4,9.3);
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -119,8 +108,6 @@
 //  cout<<"Result : "<<result<<endl;
 // }
 
-
-
 // #include<iostream>
 // using namespace std;
 // double addition(double num1, double num2){
@@ -131,8 +118,6 @@
 //  double result =  addition(12.4,9.3);
 //  cout<<"Result : "<<result<<endl;
 // }
-
-
 
 // Take something and return something
 
@@ -147,8 +132,6 @@
 //     double result = addition(12.4, 9.3);
 //     cout << "Result : " << result << endl;
 // }
-
-
 
 // #include<iostream>
 // #include<string>
@@ -265,3 +248,161 @@
 //     }
 //     cout<<"Sum : "<<sum<<endl;
 // }
+
+// Function(BASIC START)
+
+// (MOSTIY USE THIS WAY) //
+
+// #include <iostream>
+// using namespace std;
+
+// // Function definition
+// int addition()
+// {
+
+//     cout << "Function Called.." << endl;
+// }
+
+// int main()
+// {
+
+//     addition(); // function call
+// }
+
+// SECOND WAY OF FUNCTION( RARE USE THIS WAY)
+
+// #include <iostream>
+// using namespace std;
+
+// // function declaration
+
+// int addition();
+
+// int main()
+// {
+//     addition(); // function call
+// }
+
+// // Function definition
+// int addition()
+// {
+
+//     cout << "Function Called.." << endl;
+// }
+
+// SUM IN FUNCTION
+
+// 1 WAY OF SUM
+
+// #include <iostream>
+// using namespace std;
+
+// // Function definition
+
+// int addition(int num1, int num2)
+// {
+
+//     cout << "Function Called.." << endl;
+
+//     int sum = num1 + num2;
+
+//     cout << "Sum : " << sum << endl;
+// }
+
+// int main()
+// {
+//     addition(10, 20); // function call
+// }
+
+// 2 WAY OF SUM
+
+// #include<iostream>
+// using namespace std;
+
+// // Function definition
+
+// int addition(int num1, int num2){
+
+//     cout<<"Function Called.."<<endl;
+
+//     int sum = num1+num2;
+
+//     return sum;
+// }
+
+// int main(){
+//    int result =  addition(2000,2000);  // function call
+
+//    cout<<"Result : "<<result<<endl;
+// }
+
+// 3 WAY OF SUM (WITH VOID)
+
+// #include <iostream>
+// using namespace std;
+
+// // Function definition
+
+// void addition(int num1, int num2)
+// {
+
+//     cout << "Function Called.." << endl;
+
+//     int sum = num1 + num2;
+//     cout << "Sum : " << sum << endl;
+// }
+
+// int main()
+// {
+//     addition(10, 20); // function call
+// }
+
+// (STRING NAME FUNCTION)
+
+// #include <iostream>
+// using namespace std;
+
+// // Function definition
+
+// int printName(string name)
+// {
+
+//     cout << "Name : " << name << endl;
+// }
+
+// int main()
+// {
+//     printName("Fatima");
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// // Function definition
+
+// string printName()
+// {
+
+//     string name = "Fatima";
+//     return name;
+// }
+
+// int main()
+// {
+//     string str = printName();
+
+//     cout << "Name : " << str << endl;
+// }
+
+
+// ASCII ref : https://www.w3schools.com/charsets/ref_html_ascii.asp
+
+// 0 -> 48
+// 9 -> 57
+
+// A -> 65
+// Z -> 90
+
+// a = 97
+// z = 122
