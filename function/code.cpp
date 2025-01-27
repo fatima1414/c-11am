@@ -404,3 +404,27 @@
 
 // a = 97
 // z = 122
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//    const char *str = "Pawan";
+
+//     cout<<str<<endl;
+
+//     int A = '0';
+
+//     int Z = 'Z';
+
+//     cout<<"ASCCI of A : "<<A<<endl;
+//     cout<<"ASCCI of Z : "<<Z<<endl;
+
+//     char ch = 65;
+
+//     cout<<ch<<endl;
+// }
+
+
