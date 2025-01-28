@@ -373,7 +373,6 @@
 //     printName("Fatima");
 // }
 
-
 // #include <iostream>
 // using namespace std;
 
@@ -393,7 +392,6 @@
 //     cout << "Name : " << str << endl;
 // }
 
-
 // ASCII ref : https://www.w3schools.com/charsets/ref_html_ascii.asp
 
 // 0 -> 48
@@ -405,26 +403,143 @@
 // a = 97
 // z = 122
 
-
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
 
-// int main(){
+// int main()
+// {
 
-//    const char *str = "Pawan";
+//     //    const char *str = "fatima";
 
-//     cout<<str<<endl;
+//     //     cout<<str<<endl;
+
+//     //    OR
+//     char str = 'f';
+//     cout << str << endl;
 
 //     int A = '0';
 
 //     int Z = 'Z';
 
-//     cout<<"ASCCI of A : "<<A<<endl;
-//     cout<<"ASCCI of Z : "<<Z<<endl;
+//     cout << "ASCCI of A : " << A << endl;
+//     cout << "ASCCI of Z : " << Z << endl;
 
 //     char ch = 65;
 
-//     cout<<ch<<endl;
+//     cout << ch << endl;
+// }
+//
+
+// TYPE OF FUNCTION
+
+//  Type 1 : TSRN
+
+// #include <iostream>
+// using namespace std;
+// int addition(int num1, int num2)
+// {
+//     int sum = num1 + num2;
+//     cout << "Sum : " << sum << endl;
+// }
+// int main()
+// {
+//     addition(10, 20);
+// }
+
+// Type 2 : TNRN
+
+// #include <iostream>
+// using namespace std;
+// int addition()
+// {
+//     int num1 = 10;
+//     int num2 = 20;
+//     int sum = num1 + num2;
+//     cout << "Sum : " << sum << endl;
+// }
+// int main()
+// {
+//     addition();
+// }
+
+// Type 3 : TNRS
+
+// #include <iostream>
+// using namespace std;
+// int addition()
+// {
+//     int num1 = 10;
+//     int num2 = 20;
+//     int sum = num1 + num2;
+
+//     return sum;
+// }
+// int main()
+// {
+//     cout << "Sum : " << addition() << endl;
+// }
+
+//  Type 4 : TSRS
+
+// #include <iostream>
+// using namespace std;
+// int addition(int num1, int num2)
+// {
+//     int sum = num1 + num2;
+
+//     return sum;
+// }
+// int main()
+// {
+//     cout << "Sum : " << addition(10, 20) << endl;
+// }
+
+// Default parameter
+
+// #include <iostream>
+// using namespace std;
+// int addition(int num1, int num2 = 50)
+// { // jab bhee ap default parameter set kr rhe ho to ap use ek dam right me krna in function me
+//     int sum = num1 + num2;
+
+//     return sum;
+// }
+// int main()
+// {
+//     cout << "Sum : " << addition(10) << endl;
+// }
+
+// NESTED FUNCTION
+
+// #include <iostream>
+// using namespace std;
+// int calculate()
+// {
+//     cout << "Outer Function Called.." << endl;
+//     auto addition = []()
+//     {
+//         cout << "Inner Function Called.." << endl;
+//     };
+//     addition();
+// }
+// int main()
+// {
+//     calculate();
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// int addition()
+// {
+//     cout << "Inner Function Called.." << endl;
+// };
+// int calculate()
+// {
+//     cout << "Outer Function Called.." << endl;
+//     addition();
+// }
+// int main()
+// {
+//     calculate();
+// }
