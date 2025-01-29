@@ -4,7 +4,7 @@ int main()
 {
     int a = 10;    // variable declared
     int *ptr = &a; // pointer variable declared and assign address of a.
-                   // value
+    // value
     cout << "a : " << a << endl;
     cout << "*ptr : " << *ptr << endl;
     // address
