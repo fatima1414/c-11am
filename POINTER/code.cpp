@@ -12,7 +12,7 @@
 //     cout << "Address of ptr : " << ptr << endl;
 // }
 
-//DOUBLE POINTER
+// DOUBLE POINTER
 
 // #include<iostream>
 // using namespace std;
@@ -37,33 +37,31 @@
 
 // Array pointer
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
+// int main(){
 
-    int arr[5] = {10,20,30,40,50};
+//     int arr[5] = {10,20,30,40,50};
 
-    int *ptr = arr;  //->array ka base address -> &arr[0]
+//     int *ptr = arr;  //->array ka base address -> &arr[0]
 
-    cout<<arr<<endl;   //ADD 
+//     cout<<arr<<endl;   //ADD
 
-    cout<<&arr[0]<<endl;  //ADD
+//     cout<<&arr[0]<<endl;  //ADD
 
+//     // int *ptr = arr;
 
-    // int *ptr = arr;
+//     // cout<<*ptr<<endl;
 
-    // cout<<*ptr<<endl;  
+//     // int *ptr = arr;
 
+//     for(int i = 0; i < 5; i++){
+//         cout<<"Address of "<<i<<" index : "<<(ptr+i)<<" and its value : ";
+//         cout<<*(ptr + i)<<endl;
+//     }
 
-    // int *ptr = arr;
-
-    for(int i = 0; i < 5; i++){
-        cout<<"Address of "<<i<<" index : "<<(ptr+i)<<" and its value : ";
-        cout<<*(ptr + i)<<endl;
-    }
-
-}
+// }
 
 // #include <iostream>
 // using namespace std;
