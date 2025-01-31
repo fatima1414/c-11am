@@ -65,60 +65,55 @@
 
 // #include <iostream>
 // using namespace std;
+// int main()
+// {
+//     int x = 10;
+//     int *ptr = &x;
 
-// int main() {
-//     int choice;
-//     double num1, num2;
+//     cout << x << endl;    // 10
+//     cout << *ptr << endl; // 10
 
-//     while (true) {
-//         // Display menu
-//         cout << "\nCalculator Menu:\n";
-//         cout << "1. Addition (+)\n";
-//         cout << "2. Subtraction (-)\n";
-//         cout << "3. Multiplication (*)\n";
-//         cout << "4. Division (/)\n";
-//         cout << "5. Modulus (%)\n";
-//         cout << "0. Exit\n";
-//         cout << "Enter your choice: ";
-//         cin >> choice;
+//     *ptr = 80;
 
-//         // Exit condition
-//         if (choice == 0) {
-//             cout << "Exiting the program...\n";
-//             break;
-//         }
+//     cout << x << endl;    // 80
+//     cout << *ptr << endl; // 80
+// }
 
-//         // Get input numbers
-//         cout << "Enter two numbers: ";
-//         cin >> num1 >> num2;
+// /  refrence variable -> address -> & -> refrence varable store the address of another variable
 
-//         // Perform calculations
-//         switch (choice) {
-//             case 1:
-//                 cout << "Result: " << (num1 + num2) << endl;
-//                 break;
-//             case 2:
-//                 cout << "Result: " << (num1 - num2) << endl;
-//                 break;
-//             case 3:
-//                 cout << "Result: " << (num1 * num2) << endl;
-//                 break;
-//             case 4:
-//                 if (num2 != 0)
-//                     cout << "Result: " << (num1 / num2) << endl;
-//                 else
-//                     cout << "Error: Cannot divide by zero!\n";
-//                 break;
-//             case 5:
-//                 if ((int)num2 != 0)
-//                     cout << "Result: " << ((int)num1 % (int)num2) << endl;
-//                 else
-//                     cout << "Error: Cannot perform modulus by zero!\n";
-//                 break;
-//             default:
-//                 cout << "Invalid choice! Please try again.\n";
-//         }
-//     }
+// FUNCTION POINTER
 
-//     return 0;
+// #include <iostream>
+// using namespace std;
+// int print(int &x)
+// {
+//     cout << "Value of x : " << x << endl; // 10
+//     cout << "Address Value of x : " << &x << endl; //add
+//     x = 100;
+// }
+// int main()
+// {
+
+//     int a = 10;
+//     print(a);
+//     cout << "Value of a : " << a << endl; // 100
+//     cout << "address of a : " << &a << endl; //add
+// }
+
+// call by value UPER javu se
+
+// #include <iostream>
+// using namespace std;
+// // function to update the original value 
+// void increment(int num)
+// {
+//     cout << "post inc : " << num++ << endl; // 5
+//     cout << num << endl;                    // 6
+// }
+// int main()
+// {
+//     int number = 5;
+//     increment(number); // Passing 'number' by value
+//     cout << number << endl;
+//     // return 0;
 // }
