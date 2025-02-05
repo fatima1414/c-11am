@@ -112,6 +112,8 @@
 //     cout << "Age : " << f.age << endl;
 // }
 
+// 1  ENCAPTION
+
 // SETTER GATTER METHOD
 // getter (INSILIZATION) and setter (DECLARATION) method
 //( MOSTLIY USE PRIVATE  SETTER GATTER METHOD )
@@ -157,31 +159,31 @@
 //CONSTRACT
 //CONSTRACT ( SECOND WAY OF SETTER)
 //(CONSTRACT  IS A SAME AS CLASS NAME)
-#include <iostream>
-using namespace std;
-// create class
-class Person
-{
-private:
-    string name;
-    int age;
+// #include <iostream>
+// using namespace std;
+// // create class
+// class Person
+// {
+// private:
+//     string name;
+//     int age;
 
-public:
-    // constructor
-    Person(string firstname, int currentage)
-    {
-        name = firstname;
-        age = currentage;
-    }
-    // getter method
-    void getDetails()
-    {
-        cout << "Name : " << name << endl;
-        cout << "Age : " << age << endl;
-    }
-};
-int main()
-{
-    Person p("Praksh", 15);
-    p.getDetails();
-}
+// public:
+//     // constructor
+//     Person(string firstname, int currentage)
+//     {
+//         name = firstname;
+//         age = currentage;
+//     }
+//     // getter method
+//     void getDetails()
+//     {
+//         cout << "Name : " << name << endl;
+//         cout << "Age : " << age << endl;
+//     }
+// };
+// int main()
+// {
+//     Person p("Praksh", 15);
+//     p.getDetails();
+// }
