@@ -90,26 +90,29 @@
 
 // USER INPUT//
 
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
 
-// int main(){
+// int main()
+// {
 
-// int n = 6;
+//     int n = 6;
 
-// int arr[n];
+//     int arr[n];
 
-// for(int i = 0; i < n; i++){
-//   cout<<"Enter element at "<<i<<" index : ";  // user help
-//   cin>>arr[i];  // user se input liya hai
-// }
+//     for (int i = 0; i < n; i++)
+//     {
+//         cout << "Enter element at " << i << " index : "; // user help
+//         cin >> arr[i];                                   // user se input liya hai
+//     }
 
-// // print array
+//     // print array
 
-// for(int i = 0; i < n; i++){
-//   cout<<"Element present at "<<i<<" index : ";  // user help
-//   cout<<arr[i]<<endl;
-// }
+//     for (int i = 0; i < n; i++)
+//     {
+//         cout << "Element present at " << i << " index : "; // user help
+//         cout << arr[i] << endl;
+//     }
 // }
 
 // #include<iostream>
@@ -135,6 +138,8 @@
 // }
 // }
 
+// Length
+
 // #include<iostream>
 // using namespace std;
 // int main(){
@@ -159,6 +164,7 @@
 // }
 
 // SEARCH OF ARRAY//
+
 //  #include <iostream>
 //  using namespace std;
 
@@ -175,7 +181,7 @@
 //     {
 //         if (arr[i] == key)
 //         {
-//             cout << "Element present in array at " << i << " index! " << endl;
+//             cout << "Element present in array at " " index! " << i << " element! "<< key << endl;
 //         }
 //     }
 // }
@@ -224,15 +230,19 @@
 // }
 
 // Minimum value in the array 1 way
+
 // #include <iostream>
 // using namespace std;
 
-// int main() {
+// int main()
+// {
 //     int arr[] = {10, 20, 5, 40, 25};
 //     int minValue = arr[0]; // Initialize with the first element
 
-//     for (int i = 1; i < 4; i++) {
-//         if (arr[i] < minValue) {
+//     for (int i = 1; i < 4; i++)
+//     {
+//         if (arr[i] < minValue)
+//         {
 //             minValue = arr[i];
 //         }
 //     }
@@ -343,6 +353,7 @@
 // }
 
 //  2 WAY OF UPDATE OF ARRAY
+
 // #include<iostream>
 // using namespace std;
 
@@ -413,7 +424,7 @@
 
 // 2 WAY OF DELETE ARRAY(DAINAMIC)
 
-// // #include <iostream>
+// #include <iostream>
 //     using namespace std;
 
 // int main()
@@ -597,3 +608,57 @@
 //     }
 
 // }
+
+//  passing array in function
+
+// #include <iostream>
+// using namespace std;
+// int printArray(int arr[], int size)
+// {
+//     for (int i = 0; i < size; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+// }
+// int main()
+// {
+//     int n = 6;
+//     int arr[n] = {11, 222, 45, 67, 89, 54};
+//     printArray(arr, n);
+// }
+
+// #include <iostream>
+// using namespace std;
+// int printArray(int *arr, int size)
+// {
+//     for (int i = 0; i < size; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+// }
+// int main()
+// {
+//     int n = 6;
+//     int arr[n] = {11, 222, 45, 67, 89, 54};
+//     printArray(arr, n);
+// }
+
+// Negative numbers in the array
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[] = {10, -5, 3, -8, 20, -15};    // Sample array
+    int size = sizeof(arr) / sizeof(arr[0]); // Finding array size
+
+    cout << "Negative numbers in the array: ";
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] < 0)
+        {
+            cout << arr[i] << " ";
+        }
+    }
+    return 0;
+}
