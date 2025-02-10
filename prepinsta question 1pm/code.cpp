@@ -23,6 +23,7 @@
 // }
 
 // Even or Odd number:
+
 // #include <iostream>
 // using namespace std;
 // int main()
@@ -159,6 +160,7 @@
 // }
 
 //  PRIME NUMBER WITH COUNT KRSE ND KETLA COUNT KRSE AE DEKHASE
+
 //  #include<iostream>
 // using namespace std;
 
@@ -187,6 +189,7 @@
 // }
 
 // PRIME Number within a given RANGE:
+
 // #include<iostream>
 // using namespace std;
 // int main(){
@@ -358,6 +361,250 @@
 //     }
 // }
 
+        //  Today
+
 // // Armstrong number in a given range:
 
-// // fibonacci series upto nth term
+// #include <iostream>
+// #include <cmath>  // For pow() function
+
+// using namespace std;
+
+// // Function to check if a number is an Armstrong number
+// bool isArmstrong(int num) {
+//     int originalNum = num, sum = 0, digits = 0;
+
+//     // Counting the number of digits
+//     int temp = num;
+//     while (temp > 0) {
+//         temp /= 10;
+//         digits++;
+//     }
+
+//     // Calculating the sum of each digit raised to the power of digits
+//     temp = num;
+//     while (temp > 0) {
+//         int digit = temp % 10;         // Extract last digit
+//         sum += pow(digit, digits);     // Raise to the power of 'digits' and add
+//         temp /= 10;                    // Remove last digit
+//     }
+
+//     // If sum is equal to the original number, it's an Armstrong number
+//     return sum == originalNum;
+// }
+
+// int main() {
+//     int lower, upper;
+
+//     // Taking user input for range
+//     cout << "Enter the lower limit: ";
+//     cin >> lower;
+//     cout << "Enter the upper limit: ";
+//     cin >> upper;
+
+//     cout << "Armstrong numbers between " << lower << " and " << upper << " are: ";
+    
+//     // Checking each number in the range
+//     for (int i = lower; i <= upper; i++) {
+//         if (isArmstrong(i)) {
+//             cout << i << " ";
+//         }
+//     }
+
+//     cout << endl;
+//     return 0;
+// }
+
+
+// fibonacci series upto nth term
+
+// #include <iostream>
+// using namespace std;
+
+// void fibonacci(int n) {
+//     int a = 0, b = 1, nextTerm;
+
+//     cout << "Fibonacci Series up to " << n << " terms: ";
+    
+//     for (int i = 1; i <= n; i++) {
+//         cout << a << " ";
+//         nextTerm = a + b;  // Compute next term
+//         a = b;             // Move first term to second
+//         b = nextTerm;      // Move second term to next
+//     }
+//     cout << endl;
+// }
+
+// int main() {
+//     int n;
+//     cout << "Enter the number of terms: ";
+//     cin >> n;
+
+//     if (n <= 0) {
+//         cout << "Please enter a positive number." << endl;
+//     } else {
+//         fibonacci(n);
+//     }
+
+//     return 0;
+// }
+
+// Find the Nth Term of the Fibonacci Series 
+
+// #include <iostream>
+// using namespace std;
+
+// long long fibonacci(int n) {
+//     if (n == 0) return 0;  // Base case: F(0) = 0
+//     if (n == 1) return 1;  // Base case: F(1) = 1
+
+//     long long a = 0, b = 1, nextTerm;
+    
+//     for (int i = 2; i <= n; i++) {
+//         nextTerm = a + b;  // Compute next Fibonacci term
+//         a = b;             // Move forward
+//         b = nextTerm;
+//     }
+    
+//     return b;  // Nth Fibonacci term
+// }
+
+// int main() {
+//     int n;
+//     cout << "Enter the term number (N): ";
+//     cin >> n;
+
+//     cout << "The " << n << "th Fibonacci number is: " << fibonacci(n) << endl;
+    
+//     return 0;
+// }
+
+// Factorial of a number 
+
+// #include <iostream>
+// using namespace std;
+
+// long long factorial(int n) {
+//     long long fact = 1;  // Initialize factorial as 1
+    
+//     for (int i = 1; i <= n; i++) {
+//         fact *= i;  // Multiply fact by i
+//     }
+    
+//     return fact;
+// }
+
+// int main() {
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
+
+//     if (n < 0) {
+//         cout << "Factorial is not defined for negative numbers." << endl;
+//     } else {
+//         cout << "Factorial of " << n << " is: " << factorial(n) << endl;
+//     }
+
+//     return 0;
+// }
+
+// Power of a number :
+
+// #include <iostream>
+// using namespace std;
+
+// long long power(int base, int exponent) {
+//     long long result = 1;  // Initialize result as 1
+
+//     for (int i = 0; i < exponent; i++) {
+//         result *= base;  // Multiply result by base in each iteration
+//     }
+
+//     return result;
+// }
+
+// int main() {
+//     int base, exponent;
+    
+//     cout << "Enter base: ";
+//     cin >> base;
+//     cout << "Enter exponent: ";
+//     cin >> exponent;
+
+//     cout << base << "^" << exponent << " = " << power(base, exponent) << endl;
+
+//     return 0;
+// }
+
+// Factor of a number :
+
+// #include <iostream>
+// using namespace std;
+
+// void findFactors(int num) {
+//     cout << "Factors of " << num << " are: ";
+    
+//     for (int i = 1; i <= num; i++) {
+//         if (num % i == 0) {  // If 'i' divides 'num' without remainder, it is a factor
+//             cout << i << " ";
+//         }
+//     }
+//     cout << endl;
+// }
+
+// int main() {
+//     int num;
+//     cout << "Enter a number: ";
+//     cin >> num;
+
+//     if (num <= 0) {
+//         cout << "Please enter a positive number." << endl;
+//     } else {
+//         findFactors(num);
+//     }
+
+//     return 0;
+// }
+
+// Finding Prime Factors of a number :
+// #include <iostream>
+// using namespace std;
+
+// void primeFactors(int num) {
+//     cout << "Prime factors of " << num << " are: ";
+
+//     // Step 1: Divide by 2 (smallest prime number)
+//     while (num % 2 == 0) {
+//         cout << 2 << " ";
+//         num /= 2;
+//     }
+
+//     // Step 2: Check for odd prime factors (starting from 3)
+//     for (int i = 3; i * i <= num; i += 2) {
+//         while (num % i == 0) {
+//             cout << i << " ";
+//             num /= i;
+//         }
+//     }
+
+//     // Step 3: If a prime number greater than 2 remains
+//     if (num > 2) {
+//         cout << num;
+//     }
+    
+//     cout << endl;
+// }
+
+// int main() {
+//     int num;
+//     cout << "Enter a number: ";
+//     cin >> num;
+
+//     if (num <= 1) {
+//         cout << "No prime factors for numbers less than 2." << endl;
+//     } else {
+//         primeFactors(num);
+//     }
+
+//     return 0;
+// }
