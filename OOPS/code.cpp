@@ -461,16 +461,91 @@
 
 // Static member function
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// class Teacher{
+//     public :
+//       static double salary;  // class level variable
+//   static void getDetails(){
+//         cout<<"Salary : "<<salary<<endl;
+//     }
+// };
+// double Teacher::salary = 99;  // static data member initialiston
+// int main(){
+//     Teacher::getDetails();
+// }
+
+// constructor (eg)
+
+// #include<iostream>
+// using namespace std;
+// class Teacher{
+//     public :
+//     Teacher(){
+//         cout<<"Constructor Called..."<<endl;
+//     }
+// };
+// int main(){
+//     Teacher t1;  // automatic parameterless (default) constructor call
+
+// }
+
+// Destrutor
+
+// #include <iostream>
+// using namespace std;
+// class Teacher
+// {
+
+// public:
+//     Teacher()
+//     {
+//         cout << "Constructor Called..." << endl;
+//     }
+//     ~Teacher()
+//     {
+//         cout << "Destructor Called..." << endl;
+//     }
+// };
+// int main()
+// {
+//     Teacher t1; // automatic parameterless (default) constructor call
+// }
+
+#include <iostream>
 using namespace std;
-class Teacher{
-    public :
-      static double salary;  // class level variable
-  static void getDetails(){
-        cout<<"Salary : "<<salary<<endl;
+
+class Teacher
+{
+
+public:
+    static double salary; // class level variable
+    int *ptr;
+
+    Teacher()
+    {
+        cout << "Constructor Called..." << endl;
+    }
+    Teacher(int x)
+    {
+        ptr = new int;
+        ptr = &x;
+    }
+
+    ~Teacher()
+    {
+        delete ptr;
+    }
+    void getDetails()
+    {
+        cout << "Value : " << *ptr << endl;
     }
 };
-double Teacher::salary = 99;  // static data member initialiston
-int main(){
-    Teacher::getDetails();
+
+int main()
+{
+
+    Teacher t1; // automatic parameterless (default) constructor call
+    Teacher t2(10);
+    t2.getDetails();
 }
