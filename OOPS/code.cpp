@@ -550,3 +550,165 @@
 //     Teacher t2(10);
 //     t2.getDetails();
 // }
+
+
+// INHERITANCE (5 Type of Inhertiance)
+
+// 1 Single Inheritance
+
+// #include <iostream>
+// using namespace std;
+// // Base class
+// class Animal {
+// public:
+//     void eat() {
+//         cout << "Eating..." << endl;
+//     }
+// };
+// // Derived class
+// class Dog : public Animal {
+// public:
+//     void bark() {
+//         cout << "Barking..." << endl;
+//     }
+// };
+// int main() {
+//     Dog d;
+//     d.eat();  // Inherited from Animal
+//     d.bark();
+//     return 0;
+// }
+
+
+// 2 Multiple Inheritance
+
+// #include <iostream>
+// using namespace std;
+// // Base class 1
+// class Person {
+// public:
+//     void speak() {
+//         cout << "Speaking..." << endl;
+//     }
+// };
+// // Base class 2
+// class Employee {
+// public:
+//     void work() {
+//         cout << "Working..." << endl;
+//     }
+// };
+// // Derived class
+// class Manager : public Person, public Employee {
+// public:
+//     void manage() {
+//         cout << "Managing..." << endl;
+//     }
+// };
+// int main() {
+//     Manager m;
+//     m.speak();
+//     m.work();
+//     m.manage();
+//     return 0;
+// }
+
+
+// 3 Multilevel Inheritance
+
+// #include <iostream>
+// using namespace std;
+// // Base class
+// class Vehicle {
+// public:
+//     void drive() {
+//         cout << "Driving..." << endl;
+//     }
+// };
+// // Derived class
+// class Car : public Vehicle {
+// public:
+//     void honk() {
+//         cout << "Honking..." << endl;
+//     }
+// };
+// // Further derived class
+// class SportsCar : public Car {
+// public:
+//     void turbo() {
+//         cout << "Activating Turbo..." << endl;
+//     }
+// };
+// int main() {
+//     SportsCar sc;
+//     sc.drive();
+//     sc.honk();
+//     sc.turbo();
+//     return 0;
+// }
+
+
+// 4 Hierarchical Inheritance
+
+// #include <iostream>
+// using namespace std;
+// // Base class
+// class Shape {
+// public:
+//     void draw() {
+//         cout << "Drawing Shape..." << endl;
+//     }
+// };
+// // Derived class 1
+// class Circle : public Shape {
+// public:
+//     void area() {
+//         cout << "Calculating Circle Area..." << endl;
+//     }
+// };
+// // Derived class 2
+// class Square : public Shape {
+// public:
+//     void area() {
+//         cout << "Calculating Square Area..." << endl;
+//     }
+// };
+// int main() {
+//     Circle c;
+//     Square s;
+//     c.draw();
+//     c.area();
+//     s.draw();
+//     s.area();
+//     return 0;
+// }
+
+
+// 5 Hybrid Inheritance
+
+// #include <iostream>
+// using namespace std;
+// // Base class
+// class Engine {
+// public:
+//     void start() {
+//         cout << "Engine started." << endl;
+//     }
+// };
+// // Intermediate base class 1
+// class Car : virtual public Engine {};
+// // Intermediate base class 2
+// class Boat : virtual public Engine {};
+// // Derived class
+// class AmphibiousVehicle : public Car, public Boat {
+// public:
+//     void transform() {
+//         cout << "Switching modes." << endl;
+//     }
+// };
+// int main() {
+//     AmphibiousVehicle av;
+//     av.start();  // Inherited from Engine
+//     av.transform();
+//     return 0;
+// }
