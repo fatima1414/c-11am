@@ -181,7 +181,7 @@
 //     {
 //         if (arr[i] == key)
 //         {
-//             cout << "Element present in array at " " index! " << i << " element! "<< key << endl;
+//             cout << "Element present in array at index! " << i << " element! "<< key << endl;
 //         }
 //     }
 // }
@@ -644,21 +644,21 @@
 // }
 
 // Negative numbers in the array
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main()
-{
-    int arr[] = {10, -5, 3, -8, 20, -15};    // Sample array
-    int size = sizeof(arr) / sizeof(arr[0]); // Finding array size
+// int main()
+// {
+//     int arr[] = {10, -5, 3, -8, 20, -15};    // Sample array
+//     int size = sizeof(arr) / sizeof(arr[0]); // Finding array size
 
-    cout << "Negative numbers in the array: ";
-    for (int i = 0; i < size; i++)
-    {
-        if (arr[i] < 0)
-        {
-            cout << arr[i] << " ";
-        }
-    }
-    return 0;
-}
+//     cout << "Negative numbers in the array: ";
+//     for (int i = 0; i < size; i++)
+//     {
+//         if (arr[i] < 0)
+//         {
+//             cout << arr[i] << " ";
+//         }
+//     }
+//     return 0;
+// }

@@ -512,40 +512,41 @@
 //     Teacher t1; // automatic parameterless (default) constructor call
 // }
 
-#include <iostream>
-using namespace std;
 
-class Teacher
-{
+// #include <iostream>
+// using namespace std;
 
-public:
-    static double salary; // class level variable
-    int *ptr;
+// class Teacher
+// {
 
-    Teacher()
-    {
-        cout << "Constructor Called..." << endl;
-    }
-    Teacher(int x)
-    {
-        ptr = new int;
-        ptr = &x;
-    }
+// public:
+//     static double salary; // class level variable
+//     int *ptr;
 
-    ~Teacher()
-    {
-        delete ptr;
-    }
-    void getDetails()
-    {
-        cout << "Value : " << *ptr << endl;
-    }
-};
+//     Teacher()
+//     {
+//         cout << "Constructor Called..." << endl;
+//     }
+//     Teacher(int x)
+//     {
+//         ptr = new int;
+//         ptr = &x;
+//     }
 
-int main()
-{
+//     ~Teacher()
+//     {
+//         delete ptr;
+//     }
+//     void getDetails()
+//     {
+//         cout << "Value : " << *ptr << endl;
+//     }
+// };
 
-    Teacher t1; // automatic parameterless (default) constructor call
-    Teacher t2(10);
-    t2.getDetails();
-}
+// int main()
+// {
+
+//     Teacher t1; // automatic parameterless (default) constructor call
+//     Teacher t2(10);
+//     t2.getDetails();
+// }
