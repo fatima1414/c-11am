@@ -512,7 +512,6 @@
 //     Teacher t1; // automatic parameterless (default) constructor call
 // }
 
-
 // #include <iostream>
 // using namespace std;
 
@@ -551,8 +550,7 @@
 //     t2.getDetails();
 // }
 
-
-// INHERITANCE (5 Type of Inhertiance)
+// 2 INHERITANCE (5 Type of Inhertiance)
 
 // 1 Single Inheritance
 
@@ -578,7 +576,6 @@
 //     d.bark();
 //     return 0;
 // }
-
 
 // 2 Multiple Inheritance
 
@@ -613,7 +610,6 @@
 //     return 0;
 // }
 
-
 // 3 Multilevel Inheritance
 
 // #include <iostream>
@@ -646,7 +642,6 @@
 //     sc.turbo();
 //     return 0;
 // }
-
 
 // 4 Hierarchical Inheritance
 
@@ -683,32 +678,216 @@
 //     return 0;
 // }
 
-
 // 5 Hybrid Inheritance
 
 // #include <iostream>
 // using namespace std;
 // // Base class
-// class Engine {
+// class Engine
+// {
 // public:
-//     void start() {
+//     void start()
+//     {
 //         cout << "Engine started." << endl;
 //     }
 // };
 // // Intermediate base class 1
-// class Car : virtual public Engine {};
+// class Car : virtual public Engine
+// {
+// };
 // // Intermediate base class 2
-// class Boat : virtual public Engine {};
+// class Boat : virtual public Engine
+// {
+// };
 // // Derived class
-// class AmphibiousVehicle : public Car, public Boat {
+// class AmphibiousVehicle : public Car, public Boat
+// {
 // public:
-//     void transform() {
+//     void transform()
+//     {
 //         cout << "Switching modes." << endl;
 //     }
 // };
-// int main() {
+// int main()
+// {
 //     AmphibiousVehicle av;
-//     av.start();  // Inherited from Engine
+//     av.start(); // Inherited from Engine
 //     av.transform();
 //     return 0;
+// }
+
+// 3 Polymorphism
+
+// 1. compile time polymorphism -> static  -> overloading
+
+// #include <iostream>
+// using namespace std;
+// class Student
+// {
+// public:
+//     string name;
+//     int age;
+//     int id;
+//     // constructor -> overloading
+//     Student()
+//     {
+//         cout << "Parameterless Constructor called S1.." << endl;
+//     }
+//     Student(string name)
+//     {
+//         this->name = name;
+//         cout << "Parameter Constructor called S2.." << endl;
+//     }
+//     Student(string name, int age)
+//     {
+//         this->name = name;
+//         this->age = age;
+//         cout << "Parameter Constructor called S3.." << endl;
+//     }
+//     Student(string name, int age, int id)
+//     {
+//         this->name = name;
+//         this->age = age;
+//         this->id = id;
+//         cout << "Parameter Constructor called S4.." << endl;
+//     }
+//     void getDetails()
+//     {
+//         cout << "Name : " << name << endl;
+//         cout << "Age : " << age << endl;
+//         cout << "id : " << id << endl;
+//         cout << "Name : " << name << endl;
+//     }
+// };
+// int main()
+// {
+//     Student s1;
+//     Student s2("Raj");
+//     Student s3("Janim", 22);
+//     Student s4("Utkarsh", 20, 1);
+//     s4.getDetails();
+// }
+
+// 2 way of insilization overloding (but its not use)
+// #include <iostream>
+// using namespace std;
+// class Student
+// {
+// public:
+//     string name;
+//     int age;
+//     int id;
+//     // constructor -> overloading
+//     Student()
+//     {
+
+//         cout << "Parameterless Constructor called S1.." << endl;
+//     }
+//     Student(string name)
+//     {
+//         this->name = name;
+//         cout << "Parameter Constructor called S2.." << endl;
+//     }
+//     Student(string name, int age)
+//     {
+//         this->name = name;
+//         this->age = age;
+//         cout << "Parameter Constructor called S3.." << endl;
+//     }
+//     Student(string name, int age, int id)
+//     {
+//         this->name = name;
+//         this->age = age;
+//         this->id = id;
+//         cout << "Parameter Constructor called S4.." << endl;
+//     }
+//     // method overloading with different parameters
+//     void getDetails()
+//     {
+//         cout << "Name : " << name << endl;
+//         cout << "Age : " << age << endl;
+//         cout << "id : " << id << endl;
+//     }
+//     void getDetails(bool onlyName)
+//     {
+//         if (onlyName)
+//         {
+//             cout << "Name : " << name << endl;
+//         }
+//     }
+// };
+// int main()
+// {
+//     Student s1;
+//     Student s2("Raj");
+//     Student s3("Janim", 22);
+//     Student s4("Utkarsh", 20, 1);
+//     s4.getDetails(); // Calls full details method
+//     cout << "Next... " << endl;
+//     s2.getDetails(true); // Calls only name method
+// }
+
+// Operator overloading
+
+// #include<iostream>
+// using namespace std;
+// class Complex{
+//     public :
+//     int real;
+//     int img;
+//     Complex() {
+//         real = 0;
+//         img = 0;
+//     }
+//     Complex(int real, int img){
+//         this->real = real;
+//         this->img = img;
+//     }
+//     Complex operator +(Complex &other){
+//         Complex result;
+//         result.real = real + other.real;
+//         result.img = img +other.img;
+//         return result;
+//     }
+//     void getComplex(){
+//         cout<<"Complex number : "<<real<<"+"<<img<<"i"<<endl;
+//     }
+// };
+// int main(){
+//     Complex c1(5,4);
+//     Complex c2(2,1);
+//     Complex c3 = c1+c2;
+//     c3.getComplex();
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// class Complex{
+//     public :
+//     int real;
+//     int img;
+//     Complex() {
+//         real = 0;
+//         img = 0;
+//     }
+//     Complex(int real, int img){
+//         this->real = real;
+//         this->img = img;
+//     }
+//     Complex operator *(Complex &other){
+//         Complex result;
+//         result.real = real * other.real;
+//         result.img = img *other.img;
+//         return result;
+//     }
+//     void getComplex(){
+//         cout<<"Complex number : "<<real<<"+"<<img<<"i"<<endl;
+//     }
+// };
+// int main(){
+//     Complex c1(5,4);
+//     Complex c2(2,1);
+//     Complex c3 = c1*c2;
+//     c3.getComplex();
 // }
