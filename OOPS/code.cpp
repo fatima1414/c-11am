@@ -860,7 +860,6 @@
 //     c3.getComplex();
 // }
 
-
 // #include<iostream>
 // using namespace std;
 // class Complex{
@@ -892,27 +891,137 @@
 //     c3.getComplex();
 // }
 
+// run-time polymorphism
 
- // run-time polymorphism
+// #include <iostream>
+// using namespace std;
+// class Parent
+// {
+// public:
+//     virtual void display()
+//     {
+//         cout << "Parrent Class" << endl;
+//     }
+// };
+// class Child : public Parent
+// {
+// public:
+//     void display() override
+//     {
+//         cout << "Child Class" << endl;
+//     }
+// };
+// int main()
+// {
+//     // Parent p;
+//     // p.display();
+//     Child ch;
+//     ch.display();
+//     ch.Parent::display();
+// }
 
-#include<iostream>
-using namespace std;
-class Parent{
-    public :
-   virtual void display(){
-        cout<<"Parrent Class"<<endl;
-    }
-};
-class Child:public Parent{
-    public:
-    void display() override {
-        cout<<"Child Class"<<endl;
-    }
-};
-int main(){
-    // Parent p;
-    // p.display();
-    Child ch;
-    ch.display();
-    ch.Parent::display();
-}
+  // 4  Abstraction Class
+ 
+// #include<iostream>
+// using namespace std;
+// class Shekhawat{
+//     public :
+//     virtual void speak() = 0; //  abstract class
+//     void display(){
+//         cout<<"Base Class.."<<endl;
+//     }
+// };
+// //derive
+// class Fatima: public Shekhawat{
+//     public :
+//     void speak(){
+//         cout<<"She speak continuasly..."<<endl;
+//     }
+// };
+// int main(){
+//     // Shekhawat sh; // we can not create object of =
+//     // Shekhawat::display(); it is not static 
+//     Fatima ft;
+//     ft.display();
+//     ft.speak();
+// }
+
+//it is static abstract we can't create object
+// #include<iostream>
+// using namespace std;
+// class Shekhawat{
+//     public :
+//      static void display(){
+//         cout<<"Base Class.."<<endl;
+//     }
+// };
+// int main(){
+//     Shekhawat::display();
+// }
+
+// abstract class
+
+// #include<iostream>
+// using namespace std;
+// // this class behave like interface
+// class Shekhawat{
+//     public :
+//     virtual void speak() = 0;
+// };
+// class Fatima: public Shekhawat{
+//     public :
+//     void speak() override {
+//         cout<<"She speak continuasly..."<<endl;
+//     }
+// };
+// int main(){
+
+//     Fatima ft;
+//     ft.speak();
+// }
+
+
+//  protected thi che
+// #include <iostream>
+// using namespace std;
+// class Shekhawat
+// {
+// protected:
+//     virtual void speak() = 0;
+//     void display()
+//     {
+//         cout << "Base Class.." << endl;
+//     }
+
+// public:
+//     void showDisplay() // Public method to access protected function
+//     {
+//         display(); // ✅ Allowed within derived class
+//     }
+// };
+// class Fatima : protected Shekhawat
+// {
+// public:
+//     void speak()
+//     {
+//         cout << "She speak continuasly..." << endl;
+//     }
+
+// public:
+//     void showDisplay() // Public method to access protected function
+//     {
+//         display(); // ✅ Allowed within derived class
+       
+//     }
+// };
+// int main()
+// {
+//     // Shekhawat sh; // we can not create object of abstract class
+//     // Shekhawat::display();
+//     Fatima ft;
+//     ft.showDisplay();
+//     ft.speak();
+      
+
+//     // sh.showDisplay();
+// }
