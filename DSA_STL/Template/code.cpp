@@ -18,20 +18,20 @@
 
 // Template : inside function
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-template<typename z>
-z addition(z x, z y)
-{
-    cout << "Sum : " << x + y << endl;
-}
+// template<typename z>
+// z addition(z x, z y)
+// {
+//     cout << "Sum : " << x + y << endl;
+// }
 
-int main()
-{
+// int main()
+// {
 
-    addition(10.5, 20.8);
-}
+//     addition(10.5, 20.8);
+// }
 
 // #include <iostream>
 // using namespace std;
