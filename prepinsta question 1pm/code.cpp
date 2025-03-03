@@ -1,4 +1,4 @@
-// Positive or Negative number
+// 1 Positive or Negative number
 
 // #include <iostream>
 // using namespace std;
@@ -22,7 +22,7 @@
 //     }
 // }
 
-// Even or Odd number:
+// 2 Even or Odd number:
 
 // #include <iostream>
 // using namespace std;
@@ -39,7 +39,7 @@
 //     }
 // }
 
-// Sum of First N Natural numbers:
+// 3 Sum of First N Natural numbers:
 
 // #include <iostream>
 // using namespace std;
@@ -53,7 +53,7 @@
 //     cout << "sum of natural number:"<< sum << endl;
 // }
 
-// Sum of N natural numbers:
+// 4 Sum of N natural numbers:
 
 // #include<iostream>
 // using namespace std;
@@ -74,7 +74,7 @@
 //     return 0;
 // }
 
-// Sum of numbers in a given range:
+// 5 Sum of numbers in a given range:
 
 // #include<iostream>
 // using namespace std;
@@ -87,7 +87,7 @@
 //     cout<<sum<<endl;
 // }
 
-// Greatest of two numbers:(TERNAIRY OPERATOR)
+// 6 Greatest of two numbers:(TERNAIRY OPERATOR)
 
 // #include <iostream>
 // using namespace std;
@@ -99,7 +99,7 @@
 
 // }
 
-// Greatest of the Three numbers:(TERNAIRY OPERATOR)
+// 8 Greatest of the Three numbers:(TERNAIRY OPERATOR)
 // #include <iostream>
 // using namespace std;
 // int main()
@@ -111,7 +111,7 @@
 
 // }
 
-// Leap year or not:
+// 9 Leap year or not:
 
 // #include <iostream>
 // using namespace std;
@@ -131,7 +131,7 @@
 //     }
 // }
 
-// Prime number:
+// 10 Prime number:
 
 // #include <iostream>
 // using namespace std;
@@ -159,7 +159,7 @@
 //     }
 // }
 
-//  PRIME NUMBER WITH COUNT KRSE ND KETLA COUNT KRSE AE DEKHASE
+// 11   PRIME NUMBER WITH COUNT KRSE ND KETLA COUNT KRSE AE DEKHASE
 
 //  #include<iostream>
 // using namespace std;
@@ -188,7 +188,7 @@
 
 // }
 
-// PRIME Number within a given RANGE:
+// 12 PRIME Number within a given RANGE:
 
 // #include<iostream>
 // using namespace std;
@@ -221,7 +221,7 @@
 //    }
 // }
 
-// // SUM of digits of a number:
+// // 13 SUM of digits of a number:
 
 // #include<iostream>
 // using namespace std;
@@ -249,7 +249,7 @@
 
 // }
 
-// REVERSE of a number :
+// 14  REVERSE of a number :
 
 // #include <iostream>
 // using namespace std;
@@ -274,7 +274,7 @@
 //     cout << "Reverse : " << rev << endl;
 // }
 
-// Palindrome number:(ORIGINAL NUMBER = REVERSE NUMBER)EXAMPLE= (121=121)
+// 15 Palindrome number:(ORIGINAL NUMBER = REVERSE NUMBER)EXAMPLE= (121=121)
 
 // #include<iostream>
 // using namespace std;
@@ -303,7 +303,7 @@
 //    }
 // }
 
- // Armstrong number :
+ // 16 Armstrong number :
 // Example = 407 (power = 3)
 // 407 =  64 + 0 + 343 = 407
 
@@ -363,7 +363,7 @@
 
         //  Today
 
-// // Armstrong number in a given range:
+// // 17 Armstrong number in a given range:
 
 // #include <iostream>
 // #include <cmath>  // For pow() function
@@ -416,7 +416,7 @@
 // }
 
 
-// fibonacci series upto nth term
+// 18 fibonacci series upto nth term
 
 // #include <iostream>
 // using namespace std;
@@ -449,7 +449,7 @@
 //     return 0;
 // }
 
-// Find the Nth Term of the Fibonacci Series 
+// 19 Find the Nth Term of the Fibonacci Series 
 
 // #include <iostream>
 // using namespace std;
@@ -479,7 +479,7 @@
 //     return 0;
 // }
 
-// Factorial of a number 
+// 20 Factorial of a number 
 
 // #include <iostream>
 // using namespace std;
@@ -508,7 +508,7 @@
 //     return 0;
 // }
 
-// Power of a number :
+// 21 Power of a number :
 
 // #include <iostream>
 // using namespace std;
@@ -536,7 +536,7 @@
 //     return 0;
 // }
 
-// Factor of a number :
+// 22 Factor of a number :
 
 // #include <iostream>
 // using namespace std;
@@ -566,7 +566,8 @@
 //     return 0;
 // }
 
-// Finding Prime Factors of a number :
+// 23 Finding Prime Factors of a number :
+
 #include <iostream>
 using namespace std;
 
