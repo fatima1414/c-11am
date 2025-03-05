@@ -55,24 +55,25 @@
 
 // 4 Sum of N natural numbers:
 
-// #include<iostream>
-// using namespace std;
+// 145
+#include<iostream>
+using namespace std;
 
-// int main()
-// {
-//     int n;
-//     cout << "Enter a number : ";
-//     cin >> n;
+int main()
+{
+    int n;
+    cout << "Enter a number : ";
+    cin >> n;
 
-//     int sum=0;
+    int sum=0;
 
-//     for(int i=1;i<=n;i++)
-//         sum+=i;
+    for(int i=1;i<=n;i++)
+        sum+=i;
 
-//     cout << sum;
+    cout << sum;
 
-//     return 0;
-// }
+    return 0;
+}
 
 // 5 Sum of numbers in a given range:
 
@@ -568,44 +569,45 @@
 
 // 23 Finding Prime Factors of a number :
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-void primeFactors(int num) {
-    cout << "Prime factors of " << num << " are: ";
+// void primeFactors(int num) {
+//     cout <<
+// "Prime factors of " << num << " are: ";
 
-    // Step 1: Divide by 2 (smallest prime number)
-    while (num % 2 == 0) {
-        cout << 2 << " ";
-        num /= 2;
-    }
+//     // Step 1: Divide by 2 (smallest prime number)
+//     while (num % 2 == 0) {
+//         cout << 2 << " ";
+//         num /= 2;
+//     }
 
-    // Step 2: Check for odd prime factors (starting from 3)
-    for (int i = 3; i * i <= num; i += 2) {
-        while (num % i == 0) {
-            cout << i << " ";
-            num /= i;
-        }
-    }
+//     // Step 2: Check for odd prime factors (starting from 3)
+//     for (int i = 3; i * i <= num; i += 2) {
+//         while (num % i == 0) {
+//             cout << i << " ";
+//             num /= i;
+//         }
+//     }
 
-    // Step 3: If a prime number greater than 2 remains
-    if (num > 2) {
-        cout << num;
-    }
+//     // Step 3: If a prime number greater than 2 remains
+//     if (num > 2) {
+//         cout << num;
+//     }
     
-    cout << endl;
-}
+//     cout << endl;
+// }
 
-int main() {
-    int num;
-    cout << "Enter a number: ";
-    cin >> num;
+// int main() {
+//     int num;
+//     cout << "Enter a number: ";
+//     cin >> num;
 
-    if (num <= 1) {
-        cout << "No prime factors for numbers less than 2." << endl;
-    } else {
-        primeFactors(num);
-    }
+//     if (num <= 1) {
+//         cout << "No prime factors for numbers less than 2." << endl;
+//     } else {
+//         primeFactors(num);
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
