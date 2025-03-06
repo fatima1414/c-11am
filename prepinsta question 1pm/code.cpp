@@ -610,4 +610,253 @@ int main()
 //     }
 
 //     return 0;
+// 
+
+
+// 24 strong number
+// For Example: 145
+// 145 = 1! x 4! x 5! 
+
+// 1, 4*3*2*1 , 5*4*3*2*1
+// 1+24+120=145
+
+// #include <iostream>
+// using namespace std;
+
+// // function to calculate factorial
+// int facto(int n){
+//     int fact = 1;
+
+//     for(int i = 1; i <= n; i++)
+//             fact = fact * i;
+
+//     return fact;
 // }
+
+// int detectStrong(int num){
+
+//     int digit, sum = 0;
+//     int temp = num;
+
+//     // calculate 1! + 4! + 5!
+//     while(temp!=0){
+//         digit = temp % 10;
+
+//         sum = sum + facto(digit);
+//         temp /= 10;
+//     }
+
+//     // returns 1 if both equal else 0
+//     return sum == num;
+
+// }
+// int main ()
+// {
+//     int num = 145;
+
+//     if(detectStrong(num))
+//         cout << num << " is Strong Number";
+//     else
+//         cout << num << " is Not Strong Number";
+
+// }
+
+
+// 25 perfect number
+// For Example: 28
+// factor : 1 + 2 + 4 + 7 + 14 = 28
+
+// #include <iostream>
+// using namespace std;
+
+// int main ()
+// {
+//     int n = 5, sum = 0;
+
+//     for(int i = 1; i < n; i++){
+//         if(n % i == 0)
+//             sum = sum + i;
+//     }
+
+//     if(sum == n)
+//         cout << n << " is a perfect number";
+//     else
+//         cout << n << " is not a perfect number";
+
+// }
+
+
+
+// 26. perfect square
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// bool isPerfectSquare(long double x)
+// {
+//     if (x >= 0) {
+
+//         long long sr = sqrt(x);
+//         return (sr * sr == x);
+//     }
+
+//     return false;
+// }
+
+// int main()
+// {
+//     long long x = 84;
+//     if (isPerfectSquare(x))
+//         cout << "True";
+//     else
+//         cout << "False";
+//     return 0;
+// }
+
+
+// 27. automorphic number
+// 6 = (6)² = 36(last number same hovo joye)
+// 76 = (76)² = 5776 (last number same hovo joye)
+
+// #include <iostream>
+// using namespace std;
+
+// int isAutomorphic(int n){
+
+//     int square = n * n;
+
+//     while(n != 0)
+//     {
+//         // means not automorphic number
+//         if(n % 10 != square % 10){
+//             return 0;
+//         }
+
+//         // reduce down numbers
+//         n /= 10;
+//         square /= 10;
+//     }
+//     // if reaches here means automorphic number
+//     return 1;
+// }
+
+// int main ()
+// {
+//     int n = 376, sq = n * n ;
+
+//     if(isAutomorphic(n))
+//         cout << "Num: "<< n << ", Square: " << sq << " - is Automorphic";
+//     else
+//         cout << "Num: "<< n << ", Square: " << sq << " - is not Automorphic";
+
+// }
+
+
+// 28. harshad number
+// 18 → Sum of digits = 1 + 8 = 9
+// 18 is divisible by 9, so it is a Harshad number
+
+// #include <iostream>
+// using namespace std;
+
+// int checkHarshad(int num){
+
+//     int sum = 0;
+//     int temp = num;
+
+//     while(temp != 0){
+//         sum = sum + temp % 10;
+//         temp /= 10;
+//     }
+
+//     // will return 1 if num is divisible by sum, else 0
+//     return num % sum == 0;
+// }
+
+// int main ()
+// {
+//     int n = 10;
+
+//     if(checkHarshad(n))
+//         cout << n << " is a Harshad's number";
+//     else
+//         cout << n << " is not a Harshad's number";
+
+//     return 0;
+// }
+
+
+
+// 29 abundant number
+
+// Ex:- Abundant number 12 having a proper divisor is 1, 2, 3, 4, 6
+
+// The sum of these factors is 16 it is greater than 12
+// So it is an Abundant number
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n = 12, sum = 0;
+
+//     for (int i = 1; i < n; i++)
+//     {
+//         if (n % i == 0)
+//             sum = sum + i;
+//     }
+//     if (sum > n)
+//     {
+//         cout << n << " is an Abundant Number\n";
+//         cout << "The Abundance is: " << (sum - n);
+//     }
+//     else
+//         cout << n << " is not an Abundant Number\n";
+// }
+
+
+// 30. friendly pair
+// 1. Number 6:
+
+// Divisors: 1, 2, 3, 6
+
+// Sum of Divisors (): 1 + 2 + 3 + 6 = 12
+// 12/6=2
+
+// 2. Number 28:
+
+// Divisors: 1, 2, 4, 7, 14, 28
+
+// Sum of Divisors (): 1 + 2 + 4 + 7 + 14 + 28 = 56
+// 56/28=2
+// 2 2 is friendly pair
+
+// #include <iostream>
+// using namespace std;
+
+// int getDivisorsSum(int num){
+    
+//     int sum = 0;
+    
+//     for(int i = 1; i < num; i++){
+//         if(num % i == 0)
+//             sum = sum + i;
+//     }
+//     return sum;
+// }
+
+// int main ()
+// {
+//     int num1 = 6, num2 = 28;
+    
+//     int sum1 = getDivisorsSum(num1);
+//     int sum2 = getDivisorsSum(num2);
+    
+//     if(sum1/num1 == sum2/num2)
+//         cout << num1 << " & " << num2 << " are friendly pairs";
+//     else
+//         cout << num1 << " & " << num2 << " are not friendly pairs";
+
+    
+// }
+
