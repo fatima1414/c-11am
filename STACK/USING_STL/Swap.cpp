@@ -37,10 +37,13 @@ int main()
 
     cout << "Second Stack display : " << endl;
 
+    cout<<"Size of first stack : "<<myStack1.size()<<endl;
+
     while (myStack2.size())
     {
         cout << myStack2.top() << " ";
         myStack2.pop();
     }
     cout << endl;
+    cout<<"Size of second stack : "<<myStack2.size()<<endl;
 }
