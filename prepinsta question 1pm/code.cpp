@@ -55,25 +55,25 @@
 
 // 4 Sum of N natural numbers:
 
-// 145
-#include<iostream>
-using namespace std;
+// // 145
+// #include<iostream>
+// using namespace std;
 
-int main()
-{
-    int n;
-    cout << "Enter a number : ";
-    cin >> n;
+// int main()
+// {
+//     int n;
+//     cout << "Enter a number : ";
+//     cin >> n;
 
-    int sum=0;
+//     int sum=0;
 
-    for(int i=1;i<=n;i++)
-        sum+=i;
+//     for(int i=1;i<=n;i++)
+//         sum+=i;
 
-    cout << sum;
+//     cout << sum;
 
-    return 0;
-}
+//     return 0;
+// }
 
 // 5 Sum of numbers in a given range:
 
@@ -304,7 +304,7 @@ int main()
 //    }
 // }
 
- // 16 Armstrong number :
+// 16 Armstrong number :
 // Example = 407 (power = 3)
 // 407 =  64 + 0 + 343 = 407
 
@@ -362,7 +362,7 @@ int main()
 //     }
 // }
 
-        //  Today
+//  Today
 
 // // 17 Armstrong number in a given range:
 
@@ -404,7 +404,7 @@ int main()
 //     cin >> upper;
 
 //     cout << "Armstrong numbers between " << lower << " and " << upper << " are: ";
-    
+
 //     // Checking each number in the range
 //     for (int i = lower; i <= upper; i++) {
 //         if (isArmstrong(i)) {
@@ -426,7 +426,7 @@ int main()
 //     int a = 0, b = 1, nextTerm;
 
 //     cout << "Fibonacci Series up to " << n << " terms: ";
-    
+
 //     for (int i = 1; i <= n; i++) {
 //         cout << a << " ";
 //         nextTerm = a + b;  // Compute next term
@@ -450,7 +450,7 @@ int main()
 //     return 0;
 // }
 
-// 19 Find the Nth Term of the Fibonacci Series 
+// 19 Find the Nth Term of the Fibonacci Series
 
 // #include <iostream>
 // using namespace std;
@@ -460,13 +460,13 @@ int main()
 //     if (n == 1) return 1;  // Base case: F(1) = 1
 
 //     long long a = 0, b = 1, nextTerm;
-    
+
 //     for (int i = 2; i <= n; i++) {
 //         nextTerm = a + b;  // Compute next Fibonacci term
 //         a = b;             // Move forward
 //         b = nextTerm;
 //     }
-    
+
 //     return b;  // Nth Fibonacci term
 // }
 
@@ -476,22 +476,22 @@ int main()
 //     cin >> n;
 
 //     cout << "The " << n << "th Fibonacci number is: " << fibonacci(n) << endl;
-    
+
 //     return 0;
 // }
 
-// 20 Factorial of a number 
+// // 20 Factorial of a number
 
 // #include <iostream>
 // using namespace std;
 
 // long long factorial(int n) {
 //     long long fact = 1;  // Initialize factorial as 1
-    
+
 //     for (int i = 1; i <= n; i++) {
 //         fact *= i;  // Multiply fact by i
 //     }
-    
+
 //     return fact;
 // }
 
@@ -526,7 +526,7 @@ int main()
 
 // int main() {
 //     int base, exponent;
-    
+
 //     cout << "Enter base: ";
 //     cin >> base;
 //     cout << "Enter exponent: ";
@@ -544,7 +544,7 @@ int main()
 
 // void findFactors(int num) {
 //     cout << "Factors of " << num << " are: ";
-    
+
 //     for (int i = 1; i <= num; i++) {
 //         if (num % i == 0) {  // If 'i' divides 'num' without remainder, it is a factor
 //             cout << i << " ";
@@ -594,7 +594,7 @@ int main()
 //     if (num > 2) {
 //         cout << num;
 //     }
-    
+
 //     cout << endl;
 // }
 
@@ -610,12 +610,12 @@ int main()
 //     }
 
 //     return 0;
-// 
+//
 
 
 // 24 strong number
 // For Example: 145
-// 145 = 1! x 4! x 5! 
+// 145 = 1! x 4! x 5!
 
 // 1, 4*3*2*1 , 5*4*3*2*1
 // 1+24+120=145
@@ -713,6 +713,7 @@ int main()
 // }
 
 
+
 // 27. automorphic number
 // 6 = (6)² = 36(last number same hovo joye)
 // 76 = (76)² = 5776 (last number same hovo joye)
@@ -749,6 +750,7 @@ int main()
 //         cout << "Num: "<< n << ", Square: " << sq << " - is not Automorphic";
 
 // }
+
 
 
 // 28. harshad number
@@ -815,6 +817,7 @@ int main()
 // }
 
 
+
 // 30. friendly pair
 // 1. Number 6:
 
@@ -835,9 +838,9 @@ int main()
 // using namespace std;
 
 // int getDivisorsSum(int num){
-    
+
 //     int sum = 0;
-    
+
 //     for(int i = 1; i < num; i++){
 //         if(num % i == 0)
 //             sum = sum + i;
@@ -848,15 +851,78 @@ int main()
 // int main ()
 // {
 //     int num1 = 6, num2 = 28;
-    
+
 //     int sum1 = getDivisorsSum(num1);
 //     int sum2 = getDivisorsSum(num2);
-    
+
 //     if(sum1/num1 == sum2/num2)
 //         cout << num1 << " & " << num2 << " are friendly pairs";
 //     else
 //         cout << num1 << " & " << num2 << " are not friendly pairs";
 
-    
 // }
 
+// 3 HCF (higher common  factor )
+// #include <iostream>
+// using namespace std;
+
+// int hcf(int num1, int num2)
+// {
+
+//         // Method - 1
+
+//         for (int i = ((num1 < num2) ? num1 : num2); i >= 1; i--)
+//         {
+
+//                 if (num1 % i == 0 && num2 % i == 0)
+//                 {
+//                         return i;
+//                 }
+//         }
+// }
+
+// int main()
+// {
+
+//         int num1 = 8;
+//         int num2 = 20;
+
+//         int result = hcf(num1, num2);
+
+//         cout << "HCF of " << num1 << " and " << num2 << " is : " << result << endl;
+// }
+
+
+// Method 2 of HCF 
+// #include <iostream>
+// using namespace std;
+
+// int hcf(int num1, int num2)
+// {
+
+//     // Method - 2
+
+//     int hcfdata = 0;
+
+//     for (int i = 1; i <= num1 || i <= num2; i++)
+//     {
+
+//         if (num1 % i == 0 && num2 % i == 0)
+//         {
+//             hcfdata = i;
+//         }
+//     }
+
+//     return hcfdata;
+// }
+
+// int main()
+// {
+
+//     int num1 = 8;
+//     int num2 = 20;
+
+//     int result = hcf(num1, num2);
+
+//     cout << "HCF of " << num1 << " and " << num2 << " is : " << result << endl;
+// }
